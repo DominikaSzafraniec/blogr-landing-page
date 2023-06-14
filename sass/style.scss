@@ -21,9 +21,8 @@ html {
 }
 
 body {
-  // font-family: 'Overpass', sans-serif;
-  font-family: 'Ubuntu', sans-serif;
-  background-color: #333;
+  font-family: 'Overpass', sans-serif;
+  // font-family: 'Ubuntu', sans-serif;
 }
 
 .wrapper {
@@ -32,6 +31,93 @@ body {
   margin: 0 auto;
 }
 
-.header {
-  background-image: url('../images/');
+
+
+
+
+.nav {
+  
+  &__box {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+  &__links, &__login {
+    display: none;
+  }
+
+  &__logo-box {
+    cursor: pointer;
+    img {
+      width: 70%;
+    }
+  }
+
+  &__bars {
+    cursor: pointer;
+    img {
+      width: 80%;
+    }
+  }
 }
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.header {
+  padding: 3rem 2rem;
+  background-color:$ctaText;
+  background-image: url('../images/bg-pattern-intro-mobile.svg');
+  background-position: 40% center;
+  border-bottom-left-radius: 70px;
+
+  &__title {
+    margin: 7rem 0 2rem 0;
+    color: $white;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2.7em;
+  }
+
+  &__info {
+    margin-bottom: 4.5rem;
+    color: $white;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+  }
+
+  &__btn {
+    padding: 1rem 1.5rem;
+    width: 48%;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: $white;
+    background: none;
+    border-radius: 30px;
+
+    &--trial {
+      background-color: white;
+      color: $ctaText;
+    }
+
+    &--more-info {
+      border: 1px solid $white;
+    }
+  }
+}
+

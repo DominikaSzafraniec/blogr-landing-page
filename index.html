@@ -21,16 +21,21 @@
 <body>
 
   <header class="header">
+    <!-- <img src="./images/bg-pattern-intro-mobile.svg" alt="" class="header__bg-illustration"> -->
     <div class="wrapper">
 
       <nav class="nav">
-        <div class="nav__bars">
-          <img src="./images/icon-hamburger.svg" alt="">
-        </div>
 
-        <div class="nav__logo-box">
-          <img src="./images/logo.svg" alt="" class="nav__logo">
+        <div class="nav__box">
+          <div class="nav__logo-box">
+            <img src="./images/logo.svg" alt="" class="nav__logo">
+          </div>
+  
+          <div class="nav__bars">
+            <img src="./images/icon-hamburger.svg" alt="">
+          </div>
         </div>
+        
 
         <ul class="nav__links">
           <li class="nav__link-box">
@@ -96,8 +101,11 @@
       <div class="header__box">
         <h1 class="header__title">A modern publishing platform</h1>
         <p class="header__info">Grow your audience and build your online brand</p>
-        <button class="header__btn--trial">Start for Free</button>
-        <button class="header__btn--more-info">Learn More</button>
+        <div class="header__btns">
+          <button class="header__btn header__btn--trial">Start for Free</button>
+          <button class="header__btn header__btn--more-info">Learn More</button>
+        </div>
+        
       </div>
 
     </div>
@@ -169,9 +177,11 @@
   Newsletter
   LinkedIn -->
 
-  <div class="attribution">
+  <!-- <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Dominika</a>.
+  </footer> -->
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
