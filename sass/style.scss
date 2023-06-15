@@ -31,45 +31,6 @@ body {
   margin: 0 auto;
 }
 
-
-
-
-
-.nav {
-  
-  &__box {
-    display: flex;
-  align-items: center;
-  justify-content: space-between;
-  }
-
-  &__links, &__login {
-    display: none;
-  }
-
-  &__logo-box {
-    cursor: pointer;
-    img {
-      width: 70%;
-    }
-  }
-
-  &__bars {
-    cursor: pointer;
-    img {
-      width: 80%;
-    }
-  }
-}
-
-.show {
-  display: block;
-}
-
-.hide {
-  display: none;
-}
-
 .header {
   padding: 3rem 2rem;
   background-color:$ctaText;
@@ -121,3 +82,79 @@ body {
   }
 }
 
+.nav {
+  position: relative;
+  
+  &__box {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+  &__links, &__login {
+    display: none;
+  }
+
+  &__logo-box {
+    cursor: pointer;
+    img {
+      width: 70%;
+    }
+  }
+
+  &__bars {
+    cursor: pointer;
+    img {
+      width: 80%;
+    }
+  }
+
+  &__links {
+    position: absolute;
+    margin-top: 2rem;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    background-color: $white;
+    border-radius: 5px;
+  }
+
+  &__link-box, &__sublink-box {
+    list-style: none;
+  }
+
+  &__link, &__sublink {
+    text-decoration: none;
+    
+    font-weight: 700;
+  }
+
+  &__link {
+    color: $darkGrayBlue;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  &__sublink {
+    color: $bodyCopy;
+    font-size: 1.6rem;
+  }
+
+  &__sublinks {
+    display: none;
+  }
+
+  &__sublink-box {
+    margin: 1.5rem 0;
+    
+  }
+}
+
+.nav__link .nav__sublinks.show {
+  display: block;
+}
+
+
+.show {
+  display: block;
+}

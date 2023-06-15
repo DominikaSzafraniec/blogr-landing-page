@@ -1,13 +1,26 @@
-const navLinks = document.querySelector('.nav__links')
-
-const navBars = document.querySelector('.nav__bars')
-
-const headerBox = document.querySelector('.header__box')
+const navLinks = document.querySelector(".nav__links");
+const navLink = document.querySelectorAll(".nav__link");
+const navBars = document.querySelector(".nav__bars");
+const navSubLinks = document.querySelectorAll(".nav__sublinks");
 
 function showNav() {
-  navLinks.classList.toggle('show')
-  headerBox.classList.toggle('hide')
+  navLinks.classList.toggle("show");
+
+  // navLink.forEach(link => {
+  //   link.addEventListener('click', () => {
+  //     navSubLinks.forEach(item => {
+  //       item.classList.toggle('show')
+  //     })
+  //   })
+  // })
+
+  for (let i = 0; i <= navLink.length; i++) {
+
+    navLink[i].addEventListener('click', () => {
+      navSubLinks[i].classList.toggle('show')
+    })
+    
+  }
 }
 
-navBars.addEventListener('click', showNav)
-
+navBars.addEventListener("click", showNav);
