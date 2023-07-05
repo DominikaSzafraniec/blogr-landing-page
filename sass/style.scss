@@ -92,8 +92,7 @@ body {
     justify-content: space-between;
   }
 
-  &__links,
-  &__login {
+  &__links {
     display: none;
   }
 
@@ -139,6 +138,10 @@ body {
     color: $darkGrayBlue;
     font-size: 1.8rem;
     cursor: pointer;
+  }
+
+  &__link-icon-light {
+    display: none;
   }
 
   &__sublink {

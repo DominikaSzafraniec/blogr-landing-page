@@ -21,11 +21,9 @@
 <body>
 
   <header class="header">
-    <!-- <img src="./images/bg-pattern-intro-mobile.svg" alt="" class="header__bg-illustration"> -->
     <div class="wrapper">
 
       <nav class="nav">
-
         <div class="nav__box">
           <div class="nav__logo-box">
             <img src="./images/logo.svg" alt="" class="nav__logo">
@@ -36,12 +34,14 @@
           </div>
         </div>
         
-
+      
         <ul class="nav__links">
           <li class="nav__link-box nav__link ">
-            Product <img src="./images/icon-arrow-dark.svg" alt="">
+            Product <img class="nav__link-icon-dark" src="./images/icon-arrow-dark.svg" alt="">
+            <img src="./images/icon-arrow-light.svg" alt="" class="nav__link-icon-light">
             <ul class="nav__sublinks nav__sublink--product">
               <li class="nav__sublink-box">
+                
                 <a href="#" class="nav__sublink">Overview</a>
               </li>
               <li class="nav__sublink-box">
@@ -59,7 +59,8 @@
             </ul>
           </li>
           <li class="nav__link-box nav__link ">
-            Company <img src="./images/icon-arrow-dark.svg" alt="">
+            Company <img class="nav__link-icon-dark" src="./images/icon-arrow-dark.svg" alt="">
+            <img src="./images/icon-arrow-light.svg" alt="" class="nav__link-icon-light">
             <ul class="nav__sublinks nav__sublink--company">
               <li class="nav__sublink-box">
                 <a href="#" class="nav__sublink">About</a>
@@ -76,7 +77,8 @@
             </ul>
           </li>
           <li class="nav__link-box nav__link ">
-            Connect <img src="./images/icon-arrow-dark.svg" alt="">
+            Connect <img class="nav__link-icon-dark" src="./images/icon-arrow-dark.svg" alt="">
+            <img src="./images/icon-arrow-light.svg" alt="" class="nav__link-icon-light">
             <ul class="nav__sublinks nav__sublink--connect">
               <li class="nav__sublink-box">
                 <a href="#" class="nav__sublink">Contact</a>
@@ -88,15 +90,17 @@
                 <a href="#" class="nav__sublink">Linkedin</a>
               </li>
             </ul>
+          
           </li>
+        
           <div class="nav__underline"></div>
           <ul class="nav__btns">
             <li class="nav__btn-login"><a href="#">Login</a></li>
             <li class="nav__btn-signup"><a href="#">Sign up</a></li>
           </ul>
         
-        </ul>
-
+        </div>
+      
 
       </nav>
 
@@ -108,7 +112,7 @@
           <button class="header__btn header__btn--more-info">Learn More</button>
         </div>
         
-      </div>
+      
 
     </div>
   </header>
