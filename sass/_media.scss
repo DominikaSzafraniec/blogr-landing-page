@@ -1,0 +1,35 @@
+@media(min-width: 768px) {
+  .header {
+
+    &__btns {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+    }
+    &__btn {
+      max-width: 150px;
+      width: 20%;
+    }
+  }
+}
+
+@media(min-width: 992px) {
+  .nav {
+    display: flex;
+    &__bars {
+      display: none;
+    }
+
+    &__links {
+      display: flex;
+      position: relative;
+      background-color: transparent;
+      box-shadow: none;
+    
+    }
+
+    &__link, a {
+      color: $white;
+    }
+  }
+}

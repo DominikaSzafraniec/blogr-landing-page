@@ -59,6 +59,7 @@ body {
   color: hsl(0, 0%, 100%);
   background: none;
   border-radius: 30px;
+  cursor: pointer;
 }
 .header__btn--trial {
   background-color: white;
@@ -105,6 +106,8 @@ body {
   text-align: center;
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 20px rgb(167, 167, 167);
+          box-shadow: 1px 1px 20px rgb(167, 167, 167);
 }
 .nav__link-box, .nav__sublink-box {
   list-style: none;
@@ -114,6 +117,7 @@ body {
   font-weight: 700;
 }
 .nav__link {
+  margin-bottom: 2rem;
   color: hsl(237, 17%, 21%);
   font-size: 1.8rem;
   cursor: pointer;
@@ -124,11 +128,88 @@ body {
 }
 .nav__sublinks {
   display: none;
+  margin-top: 1.5rem;
+  padding: 1.5rem 0;
+  background-color: hsl(0, 0%, 95%);
 }
 .nav__sublink-box {
   margin: 1.5rem 0;
 }
+.nav__underline {
+  margin-bottom: 2rem;
+  height: 1px;
+  background-color: hsl(0, 0%, 95%);
+}
+.nav__btn-login, .nav__btn-signup {
+  list-style: none;
+  cursor: pointer;
+}
+.nav__btn-login a, .nav__btn-signup a {
+  text-decoration: none;
+}
+.nav__btn-login {
+  font-size: 1.8rem;
+}
+.nav__btn-login a {
+  color: hsl(207, 13%, 34%);
+  font-weight: bold;
+}
+.nav__btn-signup {
+  display: inline-block;
+  margin: 1.5rem 0 1rem 0;
+  padding: 1rem 3rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(hsl(13, 100%, 72%)), to(hsl(353, 100%, 62%)));
+  background-image: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  border-radius: 25px;
+}
+.nav__btn-signup a {
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.nav__link .nav__sublinks.show {
+  display: block;
+}
 
 .show {
   display: block;
+}
+
+@media (min-width: 768px) {
+  .header__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3rem;
+  }
+  .header__btn {
+    max-width: 150px;
+    width: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__bars {
+    display: none;
+  }
+  .nav__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .nav__link, .nav a {
+    color: hsl(0, 0%, 100%);
+  }
 }/*# sourceMappingURL=style.css.map */
